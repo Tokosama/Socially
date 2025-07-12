@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import ModeToggle from "@/components/ui/ModeToggle";
+import ModeToggle from "@/components/ModeToggle";
 import {
   SignedIn,
   SignedOut,
@@ -9,10 +9,10 @@ import {
 } from "@clerk/nextjs";
 import Image from "next/image";
 
-export default async  function Home() {
+export default async function Home() {
   return (
     <div className="m-4">
-   <h1>Home page welcome</h1>
+      <h1>Home page welcome</h1>
     </div>
   );
 }
