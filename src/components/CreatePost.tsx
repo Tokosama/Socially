@@ -20,7 +20,10 @@ export default function CreatePost() {
     if (!content.trim() && !imageUrl) return;
     try {
       const result = await createPost(content, imageUrl);
+
       if (result?.success) {
+      console.log("Psting")
+
         //reset the form 
         setContent("");
         setImageUrl("");
