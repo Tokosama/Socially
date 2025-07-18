@@ -46,7 +46,7 @@ export default function NotificationsPage() {
       } catch (error) {
         toast.error("Failed to fetch notifications");
       } finally {
-        
+         
         setIsLoading(false);
       }
     };
