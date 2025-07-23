@@ -24,12 +24,13 @@ export async function generateMetadata({params} : {params:{username:string}}){
     isFollowing(user?.id ||''),
   ])
     return (
+      
    <ProfilePageClient
    user={user}
    posts={posts}
    likedPosts={likePosts}
    isFollowing={isCurrentUserFollowing} 
-   
+
    
    />
   )
