@@ -25,6 +25,7 @@ export async function generateMetadata({params} : {params:{username:string}}){
   ])
     return (
       
+      
    <ProfilePageClient
    user={user}
    posts={posts}
