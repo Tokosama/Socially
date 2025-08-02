@@ -22,7 +22,6 @@ export default function CreatePost() {
       const result = await createPost(content, imageUrl);
 
       if (result?.success) {
-      console.log("Psting")
 
         //reset the form 
         setContent("");

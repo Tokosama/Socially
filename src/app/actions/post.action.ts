@@ -8,7 +8,6 @@ export async function createPost(content: string, image: string) {
   try {
     const userId = await getDbUserId();
     if (!userId) return;
-    console.log(content, image);
     const post = await prisma.post.create({
       data: {
         content,
@@ -16,7 +15,6 @@ export async function createPost(content: string, image: string) {
         authorId: userId,
       },
     });
-    console.log(userId);
 
     revalidatePath("/");
     return { success: true, post };
